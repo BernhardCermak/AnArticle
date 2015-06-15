@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+@media only screen and (max-width: 768px) {
+  body .mainContend aside {
+    display: none !important; }
+  body .mainContend article {
+    width: 100% !important; } }
+html {
+  max-height: 1000000px;
+  height: 100%; }
+
+body, .grid-wrapper {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #2989d8 100%, #e5e5e5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #2989d8), color-stop(100%, #e5e5e5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #2989d8 100%, #e5e5e5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #2989d8 100%, #e5e5e5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #2989d8 100%, #e5e5e5 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #2989d8 100%, #e5e5e5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+  /* IE6-9 */
+  background-position: bottom;
+  background-repeat: no-repeat; }
+  body section.grid-wrapper {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto; }
+    body section.grid-wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    body section.grid-wrapper #SiteTitle {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      /* &:last-child {
+         margin-right: 0;
+       }*/
+      height: 75px;
+      text-align: center;
+      font-size: larger;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: #a1dbff;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #a1dbff 0%, #9b9cf2 0%, #cbebff 47%, #f0f9ff 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #a1dbff), color-stop(0%, #9b9cf2), color-stop(47%, #cbebff), color-stop(100%, #f0f9ff));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover, #a1dbff 0%, #9b9cf2 0%, #cbebff 47%, #f0f9ff 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover, #a1dbff 0%, #9b9cf2 0%, #cbebff 47%, #f0f9ff 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover, #a1dbff 0%, #9b9cf2 0%, #cbebff 47%, #f0f9ff 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at center, #a1dbff 0%, #9b9cf2 0%, #cbebff 47%, #f0f9ff 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#f0f9ff',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */
+      margin-bottom: 50px; }
+    body section.grid-wrapper .mainContend aside {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      /* &:last-child {
+         margin-right: 0;
+       }*/
+      height: 400px;
+      font-size: x-large;
+      font-weight: bolder;
+      background-color: #7db9e8; }
+    body section.grid-wrapper .mainContend article {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      /* &:last-child {
+         margin-right: 0;
+       }*/
+      background-color: darkgray;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      font-family: "Courier New", Courier, monospace; }
+  body .icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  body footer #author {
+    float: left; }
+  body footer #date {
+    float: right; }
+
+/*# sourceMappingURL=app.css.map */

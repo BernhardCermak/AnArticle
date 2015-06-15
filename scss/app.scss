@@ -1,0 +1,118 @@
+// Sass Example
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+@import "mymixins";
+@import "myVariables";
+
+// my grid
+
+$grid-columns: 12;
+$max-width: em(960);
+
+$mobile-breakpoints: new-breakpoint(max-width 768px 8);
+
+@media only screen and (max-width: 768px) {
+  //@include span-columns(4);
+  body{
+    .mainContend {
+      aside {
+        display: none !important;
+      }
+      article{
+        width:100%!important;
+      }
+    }
+  }
+}
+
+html {
+  max-height: 1000000px;
+  height: 100%;
+}
+
+body, .grid-wrapper {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  @include BG();
+  section.grid-wrapper {
+
+    @include outer-container();
+
+    #SiteTitle {
+      @include span-columns(12);
+      height: 75px;
+      text-align: center;
+      font-size: larger;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      @include gradient();
+      margin-bottom: 50px;
+
+    }
+    .mainContend {
+      aside {
+        @include span-columns(2);
+        height: 400px;
+        font-size: x-large;
+        font-weight: bolder;
+        background-color: #7db9e8;
+      }
+      article {
+        @include span-columns(8);
+        background-color: darkgray;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        @include rounded(50px);
+        font-family: "Courier New", Courier, monospace;
+      }
+
+    }
+  }
+
+  .icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+  footer {
+    #author {
+      float: left;
+    }
+    #date {
+      float: right;
+    }
+  }
+
+}
